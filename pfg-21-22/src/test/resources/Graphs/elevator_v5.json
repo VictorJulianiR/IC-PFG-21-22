@@ -1,0 +1,553 @@
+{
+    "models": [
+        {
+            "edges": [
+                {
+                    "id": "039ca2e0-dcf4-11eb-b459-3950b112a030",
+                    "name": "requestElevatorFromFloorDown",
+                    "sourceVertexId": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "d27552c0-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "19a22600-dcf4-11eb-b459-3950b112a030",
+                    "name": "startGroup",
+                    "sourceVertexId": "ec1a6ad0-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "cc15da80-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "352c03a0-dcf4-11eb-b459-3950b112a030",
+                    "name": "requestElevatorFromFloorUp",
+                    "sourceVertexId": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "d27552c0-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "3f1761c0-dcf4-11eb-b459-3950b112a030",
+                    "name": "requestStopFromOtherFloor",
+                    "sourceVertexId": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "d27552c0-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "486c9a60-dcf4-11eb-b459-3950b112a030",
+                    "name": "closeDoor",
+                    "sourceVertexId": "d27552c0-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "d31d5290-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "53416e20-dcf4-11eb-b459-3950b112a030",
+                    "name": "stopRequestON",
+                    "sourceVertexId": "d31d5290-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "d381e0c0-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "59558580-dcf4-11eb-b459-3950b112a030",
+                    "name": "stopRequestOFF",
+                    "sourceVertexId": "d31d5290-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "d31d5290-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "6dfb0370-dcf4-11eb-b459-3950b112a030",
+                    "name": "existsAnotherRequest",
+                    "sourceVertexId": "d381e0c0-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "d27552c0-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "795a3ce0-dcf4-11eb-b459-3950b112a030",
+                    "name": "noMoreRequest",
+                    "sourceVertexId": "d381e0c0-dcf3-11eb-b459-3950b112a030",
+                    "targetVertexId": "cc15da80-dcf3-11eb-b459-3950b112a030"
+                },
+                {
+                    "id": "e9f87fc0-dcf4-11eb-b459-3950b112a030",
+                    "name": "wrongInput",
+                    "sourceVertexId": "d563cab0-dcf4-11eb-b459-3950b112a030",
+                    "targetVertexId": "eec84cc0-dcf3-11eb-b459-3950b112a030"
+                }
+            ],
+            "generator": "random(edge_coverage(90))",
+            "id": "b7deaec0-dcf3-11eb-b459-3950b112a030",
+            "name": "Elevator",
+            "startElementId": "ec1a6ad0-dcf3-11eb-b459-3950b112a030",
+            "vertices": [
+                {
+                    "id": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                    "name": "Idle",
+                    "properties": {
+                        "x": 579.6612017254549,
+                        "y": -62.01548077773817
+                    }
+                },
+                {
+                    "id": "d27552c0-dcf3-11eb-b459-3950b112a030",
+                    "name": "PreparingToMove",
+                    "properties": {
+                        "x": 396.6019055757814,
+                        "y": 175.0595828477926
+                    }
+                },
+                {
+                    "id": "d31d5290-dcf3-11eb-b459-3950b112a030",
+                    "name": "Moving ",
+                    "properties": {
+                        "x": 388.59643290090173,
+                        "y": 466.15218606394893
+                    }
+                },
+                {
+                    "id": "d381e0c0-dcf3-11eb-b459-3950b112a030",
+                    "name": "FindNextDestination",
+                    "properties": {
+                        "x": 950.7897768091057,
+                        "y": 483.149813945442
+                    }
+                },
+                {
+                    "id": "ec1a6ad0-dcf3-11eb-b459-3950b112a030",
+                    "name": "v_Start",
+                    "properties": {
+                        "x": 67.66333169909751,
+                        "y": -53.677413046354
+                    }
+                },
+                {
+                    "id": "eec84cc0-dcf3-11eb-b459-3950b112a030",
+                    "name": "v_StopElevator",
+                    "properties": {
+                        "x": 41.65442453911127,
+                        "y": 58.36095625820241
+                    }
+                },
+                {
+                    "id": "d563cab0-dcf4-11eb-b459-3950b112a030",
+                    "name": "h_History",
+                    "properties": {
+                        "x": 42.65476712218772,
+                        "y": 328.45345368882937
+                    }
+                }
+            ],
+            "editor": {
+                "elements": {
+                    "edges": [
+                        {
+                            "data": {
+                                "id": "e9f87fc0-dcf4-11eb-b459-3950b112a030",
+                                "name": "wrongInput",
+                                "source": "d563cab0-dcf4-11eb-b459-3950b112a030",
+                                "target": "eec84cc0-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "795a3ce0-dcf4-11eb-b459-3950b112a030",
+                                "name": "noMoreRequest",
+                                "source": "d381e0c0-dcf3-11eb-b459-3950b112a030",
+                                "target": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "6dfb0370-dcf4-11eb-b459-3950b112a030",
+                                "name": "existsAnotherRequest",
+                                "source": "d381e0c0-dcf3-11eb-b459-3950b112a030",
+                                "target": "d27552c0-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "59558580-dcf4-11eb-b459-3950b112a030",
+                                "name": "stopRequestOFF",
+                                "source": "d31d5290-dcf3-11eb-b459-3950b112a030",
+                                "target": "d31d5290-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "53416e20-dcf4-11eb-b459-3950b112a030",
+                                "name": "stopRequestON",
+                                "source": "d31d5290-dcf3-11eb-b459-3950b112a030",
+                                "target": "d381e0c0-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "486c9a60-dcf4-11eb-b459-3950b112a030",
+                                "name": "closeDoor",
+                                "source": "d27552c0-dcf3-11eb-b459-3950b112a030",
+                                "target": "d31d5290-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "3f1761c0-dcf4-11eb-b459-3950b112a030",
+                                "name": "requestStopFromOtherFloor",
+                                "source": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                                "target": "d27552c0-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "352c03a0-dcf4-11eb-b459-3950b112a030",
+                                "name": "requestElevatorFromFloorUp",
+                                "source": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                                "target": "d27552c0-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "19a22600-dcf4-11eb-b459-3950b112a030",
+                                "name": "startGroup",
+                                "source": "ec1a6ad0-dcf3-11eb-b459-3950b112a030",
+                                "target": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "039ca2e0-dcf4-11eb-b459-3950b112a030",
+                                "name": "requestElevatorFromFloorDown",
+                                "source": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                                "target": "d27552c0-dcf3-11eb-b459-3950b112a030",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "group": "edges",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": true,
+                            "classes": ""
+                        }
+                    ],
+                    "nodes": [
+                        {
+                            "data": {
+                                "id": "d563cab0-dcf4-11eb-b459-3950b112a030",
+                                "name": "h_History",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 42.65476712218772,
+                                "y": 328.45345368882937
+                            },
+                            "group": "nodes",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": false,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "eec84cc0-dcf3-11eb-b459-3950b112a030",
+                                "name": "v_StopElevator",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 41.65442453911127,
+                                "y": 58.36095625820241
+                            },
+                            "group": "nodes",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": false,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "ec1a6ad0-dcf3-11eb-b459-3950b112a030",
+                                "name": "v_Start",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 67.66333169909751,
+                                "y": -53.677413046354
+                            },
+                            "group": "nodes",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": false,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "d381e0c0-dcf3-11eb-b459-3950b112a030",
+                                "name": "FindNextDestination",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 950.7897768091057,
+                                "y": 483.149813945442
+                            },
+                            "group": "nodes",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": false,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "d31d5290-dcf3-11eb-b459-3950b112a030",
+                                "name": "Moving ",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 388.59643290090173,
+                                "y": 466.15218606394893
+                            },
+                            "group": "nodes",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": false,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "d27552c0-dcf3-11eb-b459-3950b112a030",
+                                "name": "PreparingToMove",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 396.6019055757814,
+                                "y": 175.0595828477926
+                            },
+                            "group": "nodes",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": false,
+                            "classes": ""
+                        },
+                        {
+                            "data": {
+                                "id": "cc15da80-dcf3-11eb-b459-3950b112a030",
+                                "name": "Idle",
+                                "color": "LightSteelBlue"
+                            },
+                            "position": {
+                                "x": 579.6612017254549,
+                                "y": -62.01548077773817
+                            },
+                            "group": "nodes",
+                            "removed": false,
+                            "selected": false,
+                            "selectable": true,
+                            "locked": false,
+                            "grabbable": true,
+                            "pannable": false,
+                            "classes": ""
+                        }
+                    ]
+                },
+                "style": [
+                    {
+                        "selector": "core",
+                        "style": {
+                            "active-bg-size": "0px"
+                        }
+                    },
+                    {
+                        "selector": "node",
+                        "style": {
+                            "label": "data(name)",
+                            "text-wrap": "wrap",
+                            "text-valign": "center",
+                            "text-halign": "center",
+                            "shape": "roundrectangle",
+                            "width": "label",
+                            "height": "label",
+                            "color": "rgb(0,0,0)",
+                            "background-color": "data(color)",
+                            "line-color": "data(color)",
+                            "padding": "10px"
+                        }
+                    },
+                    {
+                        "selector": "edge",
+                        "style": {
+                            "label": "data(name)",
+                            "text-wrap": "wrap",
+                            "curve-style": "bezier",
+                            "text-rotation": "autorotate",
+                            "target-arrow-shape": "triangle",
+                            "width": "4px",
+                            "line-color": "data(color)",
+                            "target-arrow-color": "data(color)",
+                            "background-color": "data(color)"
+                        }
+                    },
+                    {
+                        "selector": ":loop",
+                        "style": {
+                            "curve-style": "unbundled-bezier",
+                            "control-point-step-size": "60px"
+                        }
+                    },
+                    {
+                        "selector": ":selected",
+                        "style": {
+                            "border-width": "4px",
+                            "border-color": "rgb(0,0,0)",
+                            "line-color": "rgb(0,0,0)",
+                            "target-arrow-color": "rgb(0,0,0)"
+                        }
+                    }
+                ],
+                "data": {},
+                "zoomingEnabled": true,
+                "userZoomingEnabled": true,
+                "zoom": 1,
+                "minZoom": 1e-50,
+                "maxZoom": 1e+50,
+                "panningEnabled": true,
+                "userPanningEnabled": true,
+                "pan": {
+                    "x": 252,
+                    "y": 164
+                },
+                "boxSelectionEnabled": true,
+                "renderer": {
+                    "name": "canvas"
+                }
+            }
+        }
+    ],
+    "selectedModelIndex": 0,
+    "selectedElementId": "d27552c0-dcf3-11eb-b459-3950b112a030"
+}

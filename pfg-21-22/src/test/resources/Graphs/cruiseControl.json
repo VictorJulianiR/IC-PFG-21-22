@@ -1,0 +1,308 @@
+{
+    "models": [
+        {
+            "name": "CruiseControl",
+            "id": "c0726409-f402-42da-ab1f-15524b264704",
+            "generator": "random(edge_coverage(100))",
+            "actions": [],
+            "vertices": [
+                {
+                    "id": "058d5fe7-be80-475e-aa13-a7a1e622b736",
+                    "name": "idle",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": {
+                        "x": 298.8159637451172,
+                        "y": 218.04513549804688
+                    }
+                },
+                {
+                    "id": "7189f64c-f4df-4290-8d25-047c760f4e99",
+                    "name": "standby",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": {
+                        "x": 194.8159637451172,
+                        "y": 633.0451354980469
+                    }
+                },
+                {
+                    "id": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73",
+                    "name": "cruising",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": {
+                        "x": 746.8159637451172,
+                        "y": 602.0451354980469
+                    }
+                },
+                {
+                    "id": "9c586a4b-58fd-4a9a-beed-4320a42267b6",
+                    "name": "active",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": {
+                        "x": 745.8159637451172,
+                        "y": 205.04513549804688
+                    }
+                },
+                {
+                    "id": "3266ca35-65c5-4feb-b5a4-7e09aaa5b316",
+                    "name": "v_start",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": {
+                        "x": 41.81596374511719,
+                        "y": 413.0451354980469
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "id": "d730e96b-147c-4ff2-b286-1d8a66c848bc",
+                    "name": "off",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6",
+                    "targetVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6"
+                },
+                {
+                    "id": "db5a07c5-b484-4b4c-93e9-56b69882d7d4",
+                    "name": "accelerator",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6",
+                    "targetVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6"
+                },
+                {
+                    "id": "992602c3-4510-47aa-8a53-cd31cc072a6b",
+                    "name": "resume",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6",
+                    "targetVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6"
+                },
+                {
+                    "id": "782d36e8-d911-4885-9e6b-509baa93f798",
+                    "name": "break",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6",
+                    "targetVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6"
+                },
+                {
+                    "id": "b6b193a5-11aa-4260-94ac-efd3d2cfed77",
+                    "name": "engineOff",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                },
+                {
+                    "id": "3b0dd1a1-362b-4575-ab88-279b422d535f",
+                    "name": "resume",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                },
+                {
+                    "id": "210f3a83-51d7-4f53-93e9-2ec321856618",
+                    "name": "off",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                },
+                {
+                    "id": "831cfa0f-60a7-48c6-8563-2814f68e373b",
+                    "name": "break",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                },
+                {
+                    "id": "9685ac73-0a77-4f61-bbf5-08be4f015c3e",
+                    "name": "on",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                },
+                {
+                    "id": "3c1ac75d-630c-4de3-bd47-461ad4072e92",
+                    "name": "e_start",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "3266ca35-65c5-4feb-b5a4-7e09aaa5b316",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                },
+                {
+                    "id": "de0fb5dc-d7c2-4821-87ca-20883b8cb55d",
+                    "name": "engineON",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736",
+                    "targetVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6"
+                },
+                {
+                    "id": "df646d3f-250e-4ab2-a83b-8fddb337c665",
+                    "name": "on",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6",
+                    "targetVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73"
+                },
+                {
+                    "id": "b928854b-3514-4edb-8eff-066193d258ab",
+                    "name": "accelerator",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73",
+                    "targetVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99"
+                },
+                {
+                    "id": "4e417c17-04fb-46b4-bfe8-8ea60d5d5c7c",
+                    "name": "off",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73",
+                    "targetVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99"
+                },
+                {
+                    "id": "2d358b41-435a-4569-8635-9bd57633c224",
+                    "name": "break",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73",
+                    "targetVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99"
+                },
+                {
+                    "id": "d4d6abc6-73c1-4a52-b132-0d40b76cdfbe",
+                    "name": "on",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99",
+                    "targetVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73"
+                },
+                {
+                    "id": "32d901c3-1b88-4ba7-994d-2573157c59e0",
+                    "name": "resume",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99",
+                    "targetVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73"
+                },
+                {
+                    "id": "eb8e11ee-c592-48ea-addc-85e6b09931c2",
+                    "name": "resume",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73",
+                    "targetVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73"
+                },
+                {
+                    "id": "9e74a15b-b95a-4208-aec9-59acdc505d26",
+                    "name": "engineON",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73",
+                    "targetVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73"
+                },
+                {
+                    "id": "f8883169-1ac1-48f1-85a7-37f791eca406",
+                    "name": "on",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73",
+                    "targetVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73"
+                },
+                {
+                    "id": "e66f8b13-1342-4256-a9cd-c67d33f7c94a",
+                    "name": "breake",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99",
+                    "targetVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99"
+                },
+                {
+                    "id": "bc0a6d09-0f7c-45ae-9db7-e2085abe8f06",
+                    "name": "off",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99",
+                    "targetVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99"
+                },
+                {
+                    "id": "7de8db29-5d7d-4d27-b94c-955edd8c58ab",
+                    "name": "accelerator",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99",
+                    "targetVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99"
+                },
+                {
+                    "id": "e42deb36-d056-46b6-b7b6-26bfb24a3b41",
+                    "name": "engineON",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99",
+                    "targetVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99"
+                },
+                {
+                    "id": "1209d260-6303-4f85-b48f-1a91dedcc854",
+                    "name": "engineOFF",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "7189f64c-f4df-4290-8d25-047c760f4e99",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                },
+                {
+                    "id": "6752b5e4-5bb9-4ff3-9203-c9a39ac416ad",
+                    "name": "engineOFF",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "cdbf52c4-3b74-40c8-9a0f-cd00cdc9aa73",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                },
+                {
+                    "id": "92041141-26e8-4258-a83d-a7bcccc65435",
+                    "name": "engineOFF",
+                    "actions": [],
+                    "requirements": [],
+                    "properties": [],
+                    "sourceVertexId": "9c586a4b-58fd-4a9a-beed-4320a42267b6",
+                    "targetVertexId": "058d5fe7-be80-475e-aa13-a7a1e622b736"
+                }
+            ],
+            "startElementId": "3266ca35-65c5-4feb-b5a4-7e09aaa5b316"
+        }
+    ]
+}

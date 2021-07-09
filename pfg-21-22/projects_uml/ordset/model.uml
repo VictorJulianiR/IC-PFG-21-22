@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_-ldGAKuhEeuLyKu8Q9-qiA" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_-u1EcKuhEeuLyKu8Q9-qiA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_DerUQNuxEeuf69WOUvWi8A" name="OrdSet">
+    <region xmi:type="uml:Region" xmi:id="_Du5hkNuxEeuf69WOUvWi8A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_yvCRsNuxEeuf69WOUvWi8A" name="createEmpty" source="_xPHXENuxEeuf69WOUvWi8A" target="_He0v8NuxEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_M82CYNuyEeuf69WOUvWi8A" source="_VsXzwNuxEeuf69WOUvWi8A" target="_KTASUNuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_B36f4NuzEeuf69WOUvWi8A" name="createU" source="_xPHXENuxEeuf69WOUvWi8A" target="_VsXzwNuxEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GSjfMNuzEeuf69WOUvWi8A" name="createSet" source="_xPHXENuxEeuf69WOUvWi8A" target="_jwD7gNuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_M0mP4NuzEeuf69WOUvWi8A" name="remove" source="_mL7hANuyEeuf69WOUvWi8A" target="_mL7hANuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OHRYsNuzEeuf69WOUvWi8A" name="add" source="_mL7hANuyEeuf69WOUvWi8A" target="_mL7hANuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_djNiQNuzEeuf69WOUvWi8A" name="remove" source="_VsXzwNuxEeuf69WOUvWi8A" target="_VsXzwNuxEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_r1mCwNuzEeuf69WOUvWi8A" name="unionFilled" source="_xPHXENuxEeuf69WOUvWi8A" target="_mL7hANuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_AXNk4NwxEeuf69WOUvWi8A" name="add" source="_jwD7gNuyEeuf69WOUvWi8A" target="_VsXzwNuxEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_BVaSgNwxEeuf69WOUvWi8A" name="remove" source="_VsXzwNuxEeuf69WOUvWi8A" target="_jwD7gNuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_End5INwxEeuf69WOUvWi8A" name="add" source="_He0v8NuxEeuf69WOUvWi8A" target="_jwD7gNuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_HEkNsNwxEeuf69WOUvWi8A" name="remove" source="_jwD7gNuyEeuf69WOUvWi8A" target="_He0v8NuxEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_JbV30NwxEeuf69WOUvWi8A" name="add" source="_jwD7gNuyEeuf69WOUvWi8A" target="_jwD7gNuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_K-ZmANwxEeuf69WOUvWi8A" name="remove" source="_jwD7gNuyEeuf69WOUvWi8A" target="_jwD7gNuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_sN530NwxEeuf69WOUvWi8A" name="remove" source="_He0v8NuxEeuf69WOUvWi8A" target="_He0v8NuxEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_zj0VcNwxEeuf69WOUvWi8A" name="add" source="_VsXzwNuxEeuf69WOUvWi8A" target="_mL7hANuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GFvYgNwyEeuf69WOUvWi8A" name="removeU" source="_mL7hANuyEeuf69WOUvWi8A" target="_KTASUNuyEeuf69WOUvWi8A"/>
+      <subvertex xmi:type="uml:State" xmi:id="_He0v8NuxEeuf69WOUvWi8A" name="Empty"/>
+      <subvertex xmi:type="uml:State" xmi:id="_VsXzwNuxEeuf69WOUvWi8A" name="Filled"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_xPHXENuxEeuf69WOUvWi8A" name="S0"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_KTASUNuyEeuf69WOUvWi8A" name="F0" isLeaf="true"/>
+      <subvertex xmi:type="uml:State" xmi:id="_jwD7gNuyEeuf69WOUvWi8A" name="PartiallyFilled"/>
+      <subvertex xmi:type="uml:State" xmi:id="_mL7hANuyEeuf69WOUvWi8A" name="Overflow"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qe4ucKujEeuLyKu8Q9-qiA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-VXwsKujEeuLyKu8Q9-qiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_C-xaQNuzEeuf69WOUvWi8A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C-zPcNuzEeuf69WOUvWi8A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

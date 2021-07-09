@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_-ldGAKuhEeuLyKu8Q9-qiA" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_-u1EcKuhEeuLyKu8Q9-qiA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_DerUQNuxEeuf69WOUvWi8A" name="Elevator">
+    <region xmi:type="uml:Region" xmi:id="_Du5hkNuxEeuf69WOUvWi8A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_yvCRsNuxEeuf69WOUvWi8A" source="_xPHXENuxEeuf69WOUvWi8A" target="_He0v8NuxEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_H0-sENwzEeuf69WOUvWi8A" name="requestElevatorFromFloorDown" source="_He0v8NuxEeuf69WOUvWi8A" target="_3XaGYNwyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QSd1wNwzEeuf69WOUvWi8A" name="requestStopFromOtherFloor" source="_He0v8NuxEeuf69WOUvWi8A" target="_3XaGYNwyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Vm15cNwzEeuf69WOUvWi8A" name="requestElevatorFromFlorUp" source="_He0v8NuxEeuf69WOUvWi8A" target="_3XaGYNwyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7GRvYNwzEeuf69WOUvWi8A" name="closeDoor" source="_3XaGYNwyEeuf69WOUvWi8A" target="_6O6fANwyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_A76GANw0Eeuf69WOUvWi8A" name="stopRequestOFF" source="_6O6fANwyEeuf69WOUvWi8A" target="_6O6fANwyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_I5Oh4Nw0Eeuf69WOUvWi8A" name="stopRequestON" source="_6O6fANwyEeuf69WOUvWi8A" target="_-VkLUNwyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_SrIg0Nw0Eeuf69WOUvWi8A" name="existAnotherRequest" source="_-VkLUNwyEeuf69WOUvWi8A" target="_3XaGYNwyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_emtiANw0Eeuf69WOUvWi8A" name="noMoreRequest" source="_-VkLUNwyEeuf69WOUvWi8A" target="_He0v8NuxEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_UYlEoNw1Eeuf69WOUvWi8A" name="downAtFirstFloor" source="_tGtnwNw0Eeuf69WOUvWi8A" target="_KTASUNuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eHYsQNw1Eeuf69WOUvWi8A" name="wrongFloorID" source="_tGtnwNw0Eeuf69WOUvWi8A" target="_KTASUNuyEeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_oK8b4Nw1Eeuf69WOUvWi8A" name="wrongInput" source="_He0v8NuxEeuf69WOUvWi8A" target="_tGtnwNw0Eeuf69WOUvWi8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qU380Nw1Eeuf69WOUvWi8A" name="wrongInput" source="_-VkLUNwyEeuf69WOUvWi8A" target="_tGtnwNw0Eeuf69WOUvWi8A"/>
+      <subvertex xmi:type="uml:State" xmi:id="_He0v8NuxEeuf69WOUvWi8A" name="Idle"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_xPHXENuxEeuf69WOUvWi8A" name="startGroup"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_KTASUNuyEeuf69WOUvWi8A" name="endGroup"/>
+      <subvertex xmi:type="uml:State" xmi:id="_3XaGYNwyEeuf69WOUvWi8A" name="PreparingToMove"/>
+      <subvertex xmi:type="uml:State" xmi:id="_6O6fANwyEeuf69WOUvWi8A" name="Moving"/>
+      <subvertex xmi:type="uml:State" xmi:id="_-VkLUNwyEeuf69WOUvWi8A" name="FindNextDestination"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_tGtnwNw0Eeuf69WOUvWi8A" name="ShallowHistory16" kind="shallowHistory"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_qe4ucKujEeuLyKu8Q9-qiA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-VXwsKujEeuLyKu8Q9-qiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>
